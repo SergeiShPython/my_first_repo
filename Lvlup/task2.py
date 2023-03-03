@@ -5,6 +5,6 @@ if x == y:
 elif x < y:
     print(x)
     print(y)
-elif x > y:
+else x > y:
     print(y)
     print(x)
