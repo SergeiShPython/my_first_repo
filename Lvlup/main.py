@@ -1,11 +1,13 @@
-x=int(input())
-y=int(input())
-if x != y:
-    print("они не равны")
+x=float(input())
+y=float(input())
+if x == y:
+    print("они равны")
 elif x<y:
-print("первое меньше")
+print(x)
+print(y)
 elif x>y:
-print("первое меньше")
+print(y)
+print(x)
 else:
     print("они равны")
 
