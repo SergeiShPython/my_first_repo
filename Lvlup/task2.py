@@ -3,8 +3,7 @@ y=float(input())
 if x == y:
     print("они равны")
 elif x < y:
-    print(x)
-    print(y)
-else x > y:
-    print(y)
-    print(x)
+    print(x,y)
+elif x > y:
+    print(y,x)
+
