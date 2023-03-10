@@ -10,7 +10,6 @@ dictionary = {1:"Январь(31 день)",
               10:"Октябрь(31 день)",
               11:"Ноябрь(30дней)",
               12:"Декабрь(31 день)"}
-print(dictionary)
 number_of_mounth = int(input("Введите номер месяца:"))
 x = {}
 if number_of_mounth < 13 and number_of_mounth > 0:
