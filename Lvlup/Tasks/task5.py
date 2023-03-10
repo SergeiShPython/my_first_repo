@@ -10,3 +10,4 @@ sort_cars.sort()
 if len(sort_names)!=len(sort_cars):
     print("Машин хватит не на всех")
 else:print(list(zip(sort_names, sort_cars)))
+#sadasd
