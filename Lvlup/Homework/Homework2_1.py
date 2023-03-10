@@ -11,7 +11,6 @@ dictionary = {1:"Январь(31 день)",
               11:"Ноябрь(30дней)",
               12:"Декабрь(31 день)"}
 number_of_mounth = int(input("Введите номер месяца:"))
-x = {}
 if number_of_mounth < 13 and number_of_mounth > 0:
     print(dictionary[number_of_mounth])
 else: print("Вы ввели несуществующий месяц")
