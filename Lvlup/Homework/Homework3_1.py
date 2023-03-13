@@ -1,5 +1,5 @@
 def calculater():
-    enter_data= input()
+    enter_data= input("Введите операцию через пробел:")
     list_of_input = enter_data.split()
     operation = list_of_input[1]
     del list_of_input[1]
