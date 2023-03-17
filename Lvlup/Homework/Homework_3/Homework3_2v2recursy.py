@@ -6,5 +6,5 @@ def my_bank(term):
 my_bank(term)
 def final_contribution(contribution,my_bank):
     return contribution * my_bank
-print(f"Ваш вклад составит через {term} года(лет):", final_contribution(contribution,my_bank(term)), " денег")
+print(f"Ваш вклад составит через {term} года(лет):", final_contribution(contribution,my_bank(term)), "денег")
 
