@@ -7,4 +7,4 @@ def different_elements(list_of_numebrs, amount = 0):
 
     return (amount)
 
-print(different_elements(list_of_numbers))
+print("Количество различных элементов:", different_elements(list_of_numbers))

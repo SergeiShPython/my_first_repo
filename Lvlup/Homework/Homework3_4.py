@@ -9,4 +9,4 @@ def neighbours(list_of_numebrs, amount = 0):
         else: continue
     return (amount)
 
-print(neighbours(list_of_numbers))
+print("Количество элементов в списке, которые больше своих соседей:", neighbours(list_of_numbers))
