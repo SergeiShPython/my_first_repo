@@ -5,8 +5,10 @@ def sum_of_elem(*args):
 sum_of_elem(1,2,3,4,6,43,56,6,7,3,345)
 
 
-#хочу понять как передать значения элементов списка но пока не вышло и можно ли так вообще
-"""import random
-lst = [random.randint(0,100 ) for i in range(10)]
+
+import random
+lst = [random.randint(0,100 ) for i in range(random.randint(2,30))]
 print(lst)
-sum_of_elem([lst[i]for i in range(len(lst))])"""
+def summa(*args):
+    print("Сумма аргументов равна:", sum(args))
+summa(*lst)
