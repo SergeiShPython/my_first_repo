@@ -1,10 +1,8 @@
 n = int(input())
 l =[]
-while n>0:
-    for i in range(n):
+for i in range(n):
+    for j in range(n):
         l.append(n)
-
-        for j in range(n):
-            l.append(n)
-        n = n - 1
-print(l)
+    n = n - 1
+k = [i for i in l[::-1]]
+print(k)
