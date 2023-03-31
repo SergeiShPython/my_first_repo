@@ -1,5 +1,5 @@
-def calculator():
-    enter_data= input("Введите операцию:")
+def calculator(string):
+    enter_data= string
     string_del_space=enter_data.replace(" ", "", -1)
     for j in string_del_space:
         if j == '+':
@@ -20,13 +20,13 @@ def calculator():
     first_number = list_of_input[0]
     second_number = list_of_input[1]
     if second_number == 0 and operation == "/":
-        print("На ноль делить нельзя!")
+        return "На ноль делить нельзя!"
     elif operation == "+":
-          print(first_number + second_number)
+          return first_number + second_number
     elif operation == "-":
-          print(first_number - second_number)
+          return first_number - second_number
     elif operation == "*":
-          print(first_number * second_number)
+          return first_number * second_number
     elif operation == "/":
-         print(first_number / second_number)
-calculator()
+         return first_number / second_number
+#calculator(operations)
