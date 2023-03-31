@@ -46,4 +46,4 @@ print(student.introduce_yourself())
 print(student.age_person())
 print(student.students_introduce_yourself())
 print(student.name)
-print(human1.students_introduce_yourself)
+print(human1.students_introduce_yourself) # объект человек не имеет доступа к классу студент в то время как студент имеет имя, фамилию и возраст из класса Person
