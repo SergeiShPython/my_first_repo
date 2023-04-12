@@ -1,7 +1,7 @@
 my_string= r"Hello \' World"    #слеш что бы поставить специальный символ \" или \\ или \n. r в начале лдя передачи текста как есть
 print(my_string[0])             # обращение к 1 символу в строке, [0:-1] обращение от первого к последнему
 print(len(my_string))           # выводит длинну строки
-for i in range(len(my_string))
+for i in range(len(my_string)):
     print(i)
 print(my_string.replace("ello","i"))  # имя переменной точка метод, заменяет  что-то на что-то
 print(my_string.upper())                # делает буквы заглавными
