@@ -1,6 +1,6 @@
 import telebot
 from telebot import types
-from Final_Project.utils.Menus import buttons_1, buttons_2
+from Final_Project.utils.Menus import buttons_1, buttons_2, opne_file
 import config
 bot = telebot.TeleBot(config.bot_adress)
 @bot.message_handler(commands=['start'])
@@ -24,17 +24,14 @@ def read_text(message):
         bot.send_message(message.chat.id, "Вы вернулись в главное меню")
         buttons_1(message,bot)
     elif message.text == "Петунии" or message.text == "Петуния":
-        with open('../Final_Project/Files/Petunias.txt', mode='r', encoding='utf8') as f:
-             file_read = f.read()
-        bot.send_message(message.chat.id, f"{file_read}")
+        message.text = 'Петунии'+'.txt'
+        bot.send_message(message.chat.id, f"{opne_file(message.text)}")
     elif message.text == "Розы" or message.text == "Роза":
-        with open('../Final_Project/Files/Rose.txt', mode='r', encoding='utf8') as f:
-             file_read = f.read()
-        bot.send_message(message.chat.id, f"{file_read}")
+        message.text = 'Розы'+'.txt'
+        bot.send_message(message.chat.id, f"{opne_file(message.text)}")
     elif message.text == "Туи" or message.text == "Туя":
-        with open('../Final_Project/Files/Thuja.txt', mode='r', encoding='utf8') as f:
-             file_read = f.read()
-        bot.send_message(message.chat.id, f"{file_read}")
+        message.text = 'Туи'+'.txt'
+        bot.send_message(message.chat.id, f"{opne_file(message.text)}")
     else:
         bot.send_message(message.chat.id, "Этого я пока не знаю, но скоро обязательно научусь, а пока спроси что-то другое.")
 

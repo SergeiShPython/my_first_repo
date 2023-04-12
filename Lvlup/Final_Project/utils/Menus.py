@@ -16,5 +16,8 @@ def buttons_2(message, bot): # вторая менюха
     btn4 = types.KeyboardButton('Вернуться в главное меню')
     markup.add(btn1, btn2, btn3, btn4)
     bot.send_message(message.chat.id, 'Задайте интересующий вас вопрос или выберите кнопку внизу😋', reply_markup=markup)
-#
-# def opne_file():
+
+def opne_file(file_name):
+    with open(f'../Final_Project/Files/{file_name}', mode='r', encoding='utf8') as f:
+        file_read = f.read()
+        return file_read
